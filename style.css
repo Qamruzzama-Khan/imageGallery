@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+/* header */
+#navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(100, 61, 117);
+    width: 100%;
+}
+
+#navbar h1 a {
+    text-decoration: none;
+    color: white;
+}
+
+#navbar ul {
+    display: flex;
+    gap: 10px;
+}
+
+#navbar ul li {
+    list-style-type: none;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+/* Home Page */
+#home {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+/* Home Page -  Intro Section */
+#intro {
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+#intro h2 {
+    text-align: center;
+    font-size: 27px;
+    color: rgb(100, 61, 117);
+    margin-bottom: 20px;
+}
+
+#intro p {
+    text-align: center;
+    font-size: 17.5px;
+    line-height: 1.5;
+}
+
+/* Home Page - Article */
+#article {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgb(53, 53, 53);
+}
+
+#article h3 {
+    text-align: center;
+    font-size: 21px;
+    color: rgb(100, 61, 117);
+    margin-bottom: 10px;
+}
+
+#article p {
+    text-align: center;
+    font-size: 17.5px;
+    line-height: 1.5;
+}
+
+#article-img {
+    height: 250px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgb(64, 63, 63);
+    border: 3.5px solid white;
+}
+
+/* Home Page - Images section */
+#images {
+    text-align: center;
+    padding: 20px;
+}
+
+#images h3 {
+    font-size: 1.5em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#image-div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.image-style {
+    height: 100px;
+    width: 143px;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.image-style:hover {
+    transform: scale(1.09);
+}
+
+/* Responsive Design for Home Page */
+@media (max-width: 768px) {
+    #article {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #navbar ul li a {
+        font-size: 20px;
+    }
+
+    #navbar h1 a {
+        font-size: 30px;
+    }
+
+    #intro h2 {
+        font-size: 40px;
+    }
+
+    #intro p {
+        text-align: center;
+    }
+
+    #article h3 {
+        text-align: justify;
+        font-size: 24px;
+    }
+
+    #article p {
+        text-align: justify;
+    }
+
+    #article-img {
+        height: 300px;
+    }
+
+    .image-style {
+        height: 189px;
+        width: 261px;
+    }
+}
+
+/* About Page */
+#about {
+    height: 85vh;
+    padding: 20px;
+    margin: 20px;
+}
+
+#about h3 {
+    font-size: 25px;
+    color: rgb(100, 61, 117);
+}
+
+#about p {
+    font-size: 18px;
+    margin-top: 10px;
+    text-align: justify;
+}
+
+/* Footer */
+footer {
+    background-color: #f1f1f1;
+    color: #333;
+    padding: 10px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
